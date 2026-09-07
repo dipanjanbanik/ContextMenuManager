@@ -1,13 +1,13 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Windows右键管理")]
-[assembly: AssemblyDescription("Windows右键管理")]
+[assembly: AssemblyTitle("Windows Context Menu Manager")]
+[assembly: AssemblyDescription("Windows Context Menu Manager")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("蓝点lilac")]
-[assembly: AssemblyProduct("Windows右键管理")]
-[assembly: AssemblyCopyright("Copyright @ 2020-2021 蓝点lilac")]
-[assembly: AssemblyTrademark("蓝点lilac")]
+[assembly: AssemblyCompany("BluePointLilac")]
+[assembly: AssemblyProduct("Windows Context Menu Manager")]
+[assembly: AssemblyCopyright("Copyright @ 2020-2021 BluePointLilac")]
+[assembly: AssemblyTrademark("BluePointLilac")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
 [assembly: Guid("35190ec1-2515-488d-a2e9-825d6ff67aa2")]

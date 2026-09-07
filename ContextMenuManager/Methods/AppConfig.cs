@@ -132,7 +132,7 @@ namespace ContextMenuManager.Methods
                 LanguageIniPath = "";
                 return;
             }
-            if(language == "") language = CultureInfo.CurrentUICulture.Name;
+            if(language == "") language = IsFirstRun ? "en-US" : CultureInfo.CurrentUICulture.Name;
             LanguageIniPath = $@"{LangsDir}\{language}.ini";
             if(!File.Exists(LanguageIniPath))
             {
