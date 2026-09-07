@@ -116,10 +116,15 @@ namespace ContextMenuManager.Methods
                 Directory.CreateDirectory(dirPath);
                 Application.ApplicationExit += (sender, e) =>
                 {
-                    if(Directory.Exists(dirPath) && Directory.GetFileSystemEntries(dirPath).Length == 0)
+                    try
                     {
-                        Directory.Delete(dirPath);
+                        if(Directory.Exists(dirPath) && Directory.GetFileSystemEntries(dirPath).Length == 0)
+                        {
+                            Directory.Delete(dirPath);
+                        }
                     }
+                    catch(IOException) { }
+                    catch(UnauthorizedAccessException) { }
                 };
             }
         }

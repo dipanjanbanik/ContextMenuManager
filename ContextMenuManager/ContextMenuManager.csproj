@@ -478,10 +478,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>if not exist "$(TargetDir)Config\Languages" mkdir "$(TargetDir)Config\Languages"
-if not exist "$(TargetDir)Config\Dictionaries\Web" mkdir "$(TargetDir)Config\Dictionaries\Web"
-xcopy "$(ProjectDir)Properties\Resources\Texts\AppLanguageDic.ini" "$(SolutionDir)Languages\en-US.ini*" /y
-xcopy "$(SolutionDir)Languages" "$(TargetDir)Config\Languages" /y /i /e
-xcopy "$(ProjectDir)Properties\Resources\Texts" "$(TargetDir)Config\Dictionaries\Web" /y /i /e
-del "$(TargetDir)Config\Dictionaries\Web\AppLanguageDic.ini"</PostBuildEvent>
+xcopy "$(SolutionDir)Languages" "$(TargetDir)Config\Languages" /y /i /e</PostBuildEvent>
   </PropertyGroup>
 </Project>
