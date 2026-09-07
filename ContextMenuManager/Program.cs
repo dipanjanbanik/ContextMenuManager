@@ -15,7 +15,7 @@ namespace ContextMenuManager
             Application.SetCompatibleTextRenderingDefault(false);
             if(SingleInstance.IsRunning()) return;
             AppString.LoadStrings();
-            Updater.PeriodicUpdate();
+            //Updater.PeriodicUpdate();//已禁用启动时自动检查更新
             XmlDicHelper.ReloadDics();
             Application.Run(new MainForm());
         }
